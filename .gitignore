@@ -1,0 +1,90 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ / Android Studio
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# .vscode/ is kept (tasks and launch config).
+
+# Cursor local agent cache
+.cursor/
+
+# Flutter/Dart/Pub
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Nested historical copies (multi-GB duplicates; not unique source)
+/backups/
+
+# Local SDK paths
+**/local.properties
+
+# Android / Gradle caches
+**/.gradle/
+**/captures/
+android/app/debug
+android/app/profile
+android/app/release
+android/local.properties
+
+# Platform ephemeral generated trees
+ios/Flutter/ephemeral/
+macos/Flutter/ephemeral/
+linux/flutter/ephemeral/
+windows/flutter/ephemeral/
+
+# Build artifacts too large for GitHub (100 MB limit) and regenerable
+*.apk
+*.apks
+*.aab
+*.ipa
+*.so
+*.o
+*.d
+
+# Logs and logcat dumps
+logcat*.txt
+*_output.txt
+*_out.txt
+analyze*.txt
+analysis_report.txt
+test-results.json
+
+# Symbolication / obfuscation
+app.*.symbols
+app.*.map.json
+
+# Secrets — keep locally, never push
+.env
+.env.local
+*.jks
+*.keystore
+*.p12
+*.p8
+*.pem
+key.properties
+google-services.json
+GoogleService-Info.plist
+**/serviceAccount*.json
+**/firebase-adminsdk*.json

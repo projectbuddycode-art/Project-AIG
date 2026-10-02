@@ -1,0 +1,115 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Capture current camera logs",
+			"type": "shell",
+			"command": "adb",
+			"args": [
+				"-s",
+				"emulator-5554",
+				"logcat",
+				"-d",
+				"-v",
+				"brief"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Install latest AIG APK",
+			"type": "shell",
+			"command": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+			"args": [
+				"-NoProfile",
+				"-Command",
+				"$adb='C:\\Users\\proje\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe'; & $adb uninstall com.ai.gravure.aig; & $adb install 'C:\\Users\\proje\\Desktop\\AIG\\build\\app\\outputs\\flutter-apk\\app-debug.apk'; & $adb shell pm path com.ai.gravure.aig; & $adb shell am start -n com.ai.gravure.aig/.MainActivity"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Install AIG APK directly",
+			"type": "shell",
+			"command": "C:\\Users\\proje\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe",
+			"args": [
+				"-s",
+				"emulator-5554",
+				"install",
+				"-r",
+				"C:\\Users\\proje\\Desktop\\AIG\\build\\app\\outputs\\flutter-apk\\app-debug.apk"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Verify AIG package",
+			"type": "shell",
+			"command": "C:\\Users\\proje\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe",
+			"args": [
+				"-s",
+				"emulator-5554",
+				"shell",
+				"pm",
+				"path",
+				"com.ai.gravure.aig"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Launch AIG app",
+			"type": "shell",
+			"command": "C:\\Users\\proje\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe",
+			"args": [
+				"-s",
+				"emulator-5554",
+				"shell",
+				"am",
+				"start",
+				"-n",
+				"com.ai.gravure.aig/.MainActivity"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Confirm installed package path",
+			"type": "shell",
+			"command": "C:\\Users\\proje\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe",
+			"args": [
+				"-s",
+				"emulator-5554",
+				"shell",
+				"pm",
+				"path",
+				"com.ai.gravure.aig"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Confirm AIG package listing",
+			"type": "shell",
+			"command": "C:\\Users\\proje\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe",
+			"args": [
+				"-s",
+				"emulator-5554",
+				"shell",
+				"cmd",
+				"package",
+				"list",
+				"packages",
+				"com.ai.gravure.aig"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}

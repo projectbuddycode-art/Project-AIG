@@ -1,0 +1,15 @@
+
+09-01 08:36:36.939   609   627 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.ai.gravure.aig/.MainActivity} with LAUNCH_SINGLE_TOP from uid 2000 (BAL_ALLOW_PERMISSION) result code=3
+09-01 08:36:36.943   864   927 D WindowManagerShell: onActivityRestartAttempt: ComponentInfo{com.ai.gravure.aig/com.ai.gravure.aig.MainActivity}
+09-01 08:38:42.724  1727  1727 D ActivityThread: Package [com.ai.gravure.aig] reported as REPLACED, but missing application info. Assuming REMOVED.
+09-01 08:38:50.381  1716  1724 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~jYUeiEEDWChhDs_N1EtcQQ==/com.ai.gravure.aig-zNiVJEKb2NabdyJN2E0zFA==/base.apk' with 1 weak references
+09-01 08:44:01.433  3333  3333 D ActivityThread: Package [com.ai.gravure.aig] reported as REPLACED, but missing application info. Assuming REMOVED.
+09-01 08:44:07.427  4506  4506 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+09-01 08:44:07.440  4506  4506 I AndroidRuntime: Using default boot image
+09-01 08:44:07.440  4506  4506 I AndroidRuntime: Leaving lock profiling enabled
+09-01 08:44:08.113  4506  4506 D nativeloader: InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+09-01 08:44:08.352  4506  4506 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+09-01 08:44:10.244  4506  4506 D AndroidRuntime: Shutting down VM
+
+
+
